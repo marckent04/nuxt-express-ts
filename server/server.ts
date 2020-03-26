@@ -3,13 +3,14 @@ import express from 'express'
 import { Nuxt, Builder } from 'nuxt'
 
 import consola from 'consola'
+import { Configuration } from '@nuxt/types'
 
 export default class Server {
-  private config: any
+  private config: Configuration
 
   public app: express.Application
 
-  constructor(config: any) {
+  constructor(config: Configuration) {
     this.app = express()
     this.config = config
   }
