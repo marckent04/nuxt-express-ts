@@ -31,14 +31,18 @@
     "@vue/composition-api": "^0.3.4",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "sequelize": "^5.21.5"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.6",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
+    "@types/bluebird": "^3.5.30",
     "@types/jest": "^25.1.2",
+    "@types/sequelize": "^4.28.8",
+    "@types/validator": "^12.0.1",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "eslint": "^6.1.0",
