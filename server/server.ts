@@ -4,6 +4,7 @@ import { Nuxt, Builder } from 'nuxt'
 
 import consola from 'consola'
 import { Configuration } from '@nuxt/types'
+import { database } from './config/database'
 
 export default class Server {
   private config: Configuration
@@ -34,5 +35,14 @@ export default class Server {
       message: `Server listening on http://${host}:${port}`,
       badge: true
     })
+
+    database
+      .authenticate()
+      .then(() => {
+        console.log('Connection has been established successfully.')
+      })
+      .catch((err: any) => {
+        console.error('Unable to connect to the database:', err)
+      })
   }
 }
